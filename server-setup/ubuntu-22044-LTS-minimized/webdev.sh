@@ -12,7 +12,7 @@ adduser prod
 usermod -aG sudo prod
 
 # Install necessary packages
-apt install vim nodejs npm
+apt install vim nodejs npm screen
 
 # Install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
@@ -21,6 +21,7 @@ nvm use --lts
 
 # Install global npm packages
 npm install -g @angular/cli nodemon
+npm install node@latest
 
 # Generate SSH key
 read -p "Enter your Github account email: " email
