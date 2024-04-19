@@ -7,6 +7,10 @@ if [ "$(id -u)" != "0" ]; then
     exit $?
 fi
 
+# Add SSH key
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOKoQbbdwLP07ZlwLiiNCrX5iSr8ZhpLXmbbFU7KBtEk cobyt@Coby" > ~/.ssh/authorized_keys
+
+
 # Add prod user
 adduser prod
 usermod -aG sudo prod
