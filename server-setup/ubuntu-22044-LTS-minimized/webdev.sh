@@ -12,7 +12,7 @@ adduser prod
 usermod -aG sudo prod
 
 # Install necessary packages
-apt install vim git nodejs npm
+apt install vim nodejs npm
 
 # Install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
