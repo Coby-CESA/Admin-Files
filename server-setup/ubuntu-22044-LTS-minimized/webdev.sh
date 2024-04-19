@@ -28,8 +28,8 @@ ssh-keygen -t ed25519 -C "$email"
 
 # Manage and clone github repository
 echo "Here is the SSH key:"
-cat /.ssh/id_ed25519.pub
-read -p "Please add the key to your Github account and press [Enter] to continue..."
+cat ~/.ssh/id_ed25519.pub
+read -p "Please add the key to your Github account and continue" null
 read -p "Enter the Github repository URL: " repo
 git clone $repo /home/prod/app
 
